@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>
+                Buscador
+            </h2>
+            <fieldset>
+                <legend>
+                    Buscador de algo
+                </legend>
+                <form action="formulario.html" method="GET">
+                    <input type="search" placeholder="...">
+                    <button>
+                        Buscar
+                    </button>
+                </form>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>
+                    Login
+                </legend>
+                <form action="formulario.html" method="GET">
+                    <input type="text" placeholder="...">
+                    <input type="password" placeholder="..." >
+                    <button>
+                        LOGIN
+                    </button>
+                </form>
+            </fieldset>
+        </section>
+        <section>
+            <h2>
+                Formularios ALTA PERSONA
+            </h2>
+            <fieldset>
+                <legend>
+                    Datos personales
+                </legend>
+                <form action="formulario.html" method="GET">
+                    <input id="id"
+                        name="id"
+                        type="hidden" 
+                        value="1234654">
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input id="apellido" 
+                            name="apellido" 
+                            required
+                            type="text"
+                            placeholder="lópez">
+                    </div>
+                    <div>
+                        <label for="edad">Edad:</label>
+                        <input id="edad" 
+                            name="edad"
+                            required
+                            type="number"
+                            placeholder="36"> 
+                    </div>
+                    <div>
+                        <label for="fechaNac">Fecha Nacimiento:</label>
+                        <input id="fechaNac"
+                            name="fechaNac"
+                            required
+                            type="date"> 
+                    </div>
+                    <div>
+                        <label>Interes:</label>
+                        <div>
+                            Musica 
+                            <input                            
+                                type="checkbox" 
+                                name="MUSICA"
+                                value="true">
+                            Peliculas
+                            <input type="checkbox"
+                                name="PELICULAS"
+                                value="true">
+                            Juegos 
+                            <input type="checkbox"
+                                name="JUEGOS"
+                                value="true">
+                        </div>
+                    </div>
+                    <div>
+                        <label>Sexo (Nacimiento):</label>
+                        <div>
+                            <label for="masculino">Masculino</label>
+                            <input id="masculino"
+                                type="radio"
+                                name="SEXO" 
+                                value="MASCULINO">
+                            <label for="femenino">Femenino</label>
+                            <input id="femenino"
+                                type="radio" 
+                                name="SEXO" 
+                                value="FEMENINO">
+                        </div>
+                        <div>
+                            <input type="color"
+                                name="color"
+                                value="#ff0000">
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input id="email"
+                                required
+                                type="email"
+                                name="email"
+                                placeholder="email@email.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="descripcion">Campo libre</label>
+                        <div>
+                            <textarea id="descripcion"
+                                cols="20" rows="5">
+                            </textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="pais">Pais:</label>
+                        <select id="pais" name="pais">
+                            <option value="puedo ponerun texto super lago que seguro ">ARGENTINA</option>
+                            <option value="ARG">ARGENTINA</option>
+                            <option value="BRA" selected>BRASIL</option>
+                            <option value="PAR">PARAGUAY</option>
+                            <option value="CHI">CHILE</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="foto">Foto:</label>
+                        <div>
+                            <input type="file" name="foto">
+                        </div>
+                    </div>
+                    <button type="submit">
+                        Enviar
+                    </button>
+                    <button type="reset">
+                        Limpiar
+                    </button>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+</body>
+</html>

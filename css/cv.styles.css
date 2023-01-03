@@ -1,0 +1,107 @@
+/*selector universal*/
+* {
+   margin: 0px;     
+   padding: 0px;
+   font-size: 16px;
+}
+
+body {
+    margin-top: 20px;
+}
+
+/*selector por tipo*/
+
+/*estilos para el cv*/
+.personal {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.personal hr {
+    border: none;
+}
+.personal h1 {
+    color:orangered;
+}
+
+.personal hr#l1{
+    height: 10px;
+    background-color: pink;
+}
+.personal hr#l2{
+    height: 15px;
+    background-color: orangered;
+}
+.personal hr#l3{
+    height: 10px;
+    background-color: gray;
+}
+
+.personal div {
+    display: inline-block;
+}
+
+.personal_left {
+    /* text-transform: uppercase; */
+    width: 47%;
+    text-align: left;
+}
+.personal_left h1 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+.personal_left_datos {
+    margin-top: 10px;
+    line-height: 25px;
+}
+.personal_left_datos p {
+    color: brown;
+    font-weight: bold;
+}
+
+.personal img {
+    border-radius: 25%;
+    width: 200px;
+    height: auto;
+}
+
+.cv {
+    /* padding: 25px; */
+    padding-top: 25px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 95%;
+    border: 2px solid black;
+    /* background-color: cadetblue; */
+}
+
+/*section formacion*/
+/* .formacion {
+    background-color: antiquewhite;
+} */
+.formacion_experiencia {
+    margin-top: 20px;
+}
+.formacion_experiencia table {
+    margin: 0 auto;/*centrar la tabla*/
+    width: 80%;
+}
+.formacion_experiencia table h2 {
+    font-weight: bold;
+    color: brown;
+}
+.formacion_experiencia table h3{
+    font-weight: bold;
+    color: gray;
+}
+.formacion_experiencia p {
+    font-weight: bold;
+    color: black;
+}
+.formacion_experiencia_date {
+    color: brown;
+}
+
+.formacion_experiencia_descripcion {
+    font-weight: bold;
+    color: orangered;
+}
