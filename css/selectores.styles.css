@@ -1,0 +1,64 @@
+/*selectores */
+div p {
+    font-size: 25px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border: 1px solid red;
+}
+/*
+    Especificidad
+    0 !important
+    1 inline
+    2 #
+    3 selector
+    4 class
+*/
+div p#p2 {
+    background-color: blue;
+}
+
+div p.p2 {
+    background-color: aqua !important;
+}
+
+
+div ul li a {
+    font-size: 35px;
+}
+
+section p > strong {
+    color:red;
+}
+
+/*selectores_hermanos*/
+section.selectores_hermanos aside h1 ~ p {
+    color:rgb(255, 0, 208);
+}
+
+/*selector de atributo*/
+/* a {
+    font-size: 30px !important;
+}
+
+a {
+    font-size: 50px;
+} */
+/*PSEUDOCLASES*/
+.links a:hover {
+    font-size: 25px;
+}
+
+.links a:visited {
+    color:yellowgreen
+}
+
+.links a:active {
+    color:rgb(205, 50, 202)
+}
+
+.links a:link {
+    color:rgb(12, 182, 38);
+}
+
