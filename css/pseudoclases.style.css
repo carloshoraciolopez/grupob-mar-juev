@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/*selector por tipo */
+table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+table tbody tr:last-child {
+    font-size: 25px;
+    background-color: rgb(36, 103, 103) !important;
+}
+
+/*pares*/
+table tbody tr:first-child {
+    font-size: 25px;
+    background-color: aqua !important;
+}
+
+table tbody tr:nth-child(odd) {
+    font-size: 25px;
+    background-color: rgb(103, 73, 36);
+}
+table tbody tr:nth-child(even) {
+    font-size: 25px;
+    background-color: rgb(207, 187, 163);
+}
+
+/* tph: nth(3n+1)*/
+
+table thead tr:first-child {
+    font-size: 25px;
+    background-color: rgb(238, 0, 255);
+}
+
+table tfoot tr:last-child {
+    font-size: 25px;
+    background-color: rgb(204, 255, 0);
+}
+/*---------------------------*/
+/*
+    position
+    fixed: elemeto fijo en la pantalla
+    relative
+    absolute
+*/
+section {
+    /* top right bottom left*/
+    margin: 10px; 
+    padding: 15px;   
+}
+
+.circulo {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: fixed;
+    top:50%;
+    left:50%;
+}
+
+.cuadrado {
+    width: 70px;
+    height: 70px;
+    background-color: green;
+
+    position: relative;
+    left: 50%;
+}
+
+.relativo {
+    background-color: beige;
+}
+
+.cuadradoAzul {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    
+    position: absolute;
+    left:-5px;
+    top:-15px;
+    border-radius: 25% ;
+}
