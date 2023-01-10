@@ -1,0 +1,6 @@
+.flex-container {
+    display: flex;
+    justify-content: space-between; /*flex-start|center|flex-end|space-arraound|space-between*/;
+    align-items: center; /*baseline|center|*/;
+    flex-direction: row /*column*/;
+}
