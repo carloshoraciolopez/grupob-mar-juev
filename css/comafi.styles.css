@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+.top_menu {
+    width: 100%;
+    /* background-color: antiquewhite; */
+    /* height: 30px; */
+    display: flex;
+    font-size: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.top_menu #rojo {
+    background-color: #bf1e2eed;
+}
+.top_menu button {
+    width:132px;
+    font-size: 11px;
+    border: 0;
+    padding: 5px 0px; /*corrijo el pading*/
+    margin: 0px;
+    color:white;
+}
+.top_menu .gris {
+    background-color: gray;
+}
+
+.top_menu_links ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top_menu_links li{
+    margin: 5px;
+}
+
+.top_menu_links a{
+    color:grey;
+    font-size: 11px;
+}
+.top_menu_links a:hover{
+    color: black
+}
+
+/*estilos del logo link y formularios*/
+.logo_menu_boton {
+    display: flex;
+    align-items: center;/*strech|center|flext-start|flex-end*/
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.logo_menu_boton a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 2px;
+    font-weight: 500;
+    color: black;
+    font-size: 13px;
+}
+.logo_menu_boton a:hover{
+    color: #789c48;
+}
+.active {
+    color: #789c48 !important;
+}
+
+.logo_menu_boton ul {
+    display: flex;
+}
+
+.logo_menu_boton ul a::after {
+    content: ' |';
+}
+
+/*css de secciones*/
+.secciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: #789c48;
+}
+.secciones a {
+    color: rgba(255,255,255,.8);
+    font-size: 14px;
+    font-weight: 100;
+    margin: 0 10px;
+}

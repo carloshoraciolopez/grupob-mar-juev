@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cuadrado  {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: gray;
+
+            animation-name: zoomIn;
+            animation-duration: 4s;
+            /*retrasar la animacion*/
+            /* animation-delay: 2s; */
+
+            /*quiero moverlo, position:relative*/
+            position: relative; /*es relativo al  body*/
+
+            /*alternar la direccion animacion*/
+            animation-direction: normal;/*normal|reverse|alternate*/
+
+            /*cambiar la velocidad con la que mueve*/
+            animation-timing-function: linear;/*linear|ease|*/;
+
+            /*cuanta veces quiero repetir*/
+            animation-iteration-count: 1;
+        }        
+
+        @keyframes mianimacion{
+            0% {/*al inicio de la animacion*/
+                background-color: gray;
+                left: 0;
+                top: 0;
+            }
+            25% {/*al inicio de la animacion*/
+                background-color: red;
+                left: 300px;                
+                top: 0;
+            }
+            50% {/*al la mitad de la animacion*/
+                background-color: blue;
+                left: 300px;                
+                top: 300px;
+            }
+            75% {/*al la mitad de la animacion*/
+                background-color: aquamarine;
+                left:0;
+                top:300px
+            }
+            100% {/*al final de la animacion*/
+                background-color: green;
+                left:0;
+                top:0px
+            }
+        }
+        @keyframes zoomIn{
+            0% {/*al inicio de la animacion*/
+                background-color: gray;
+                transform: scale(.1);
+            }
+            20% {/*al inicio de la animacion*/
+                background-color: red;
+                transform: scale(.2);
+            }
+            40% {/*al la mitad de la animacion*/
+                background-color: blue;
+                transform: scale(.4);
+            }
+            60% {/*al la mitad de la animacion*/
+                background-color: aquamarine;
+                transform: scale(.6);
+            }
+            80% {/*al final de la animacion*/
+                background-color: green;
+                transform: scale(.8);
+            }
+            100% {/*al final de la animacion*/
+                background-color: green;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="cuadrado"></div>
+</body>
+</html>

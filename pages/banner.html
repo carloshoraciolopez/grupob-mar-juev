@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/banner.styles.css">
+    <style>
+        .banner {
+            display: flex;
+            height: 50vh;
+            width: 100%;
+            background-color: burlywood;
+            background-image: url(../img/lio.jpg );
+            background-size: 100%;/*cover: agranda o achica para cubrir el espacio designado |contain*/
+            /* background-repeat: no-repeat; */
+            background-position-y: 90% ; /*eje x o y*/
+            /*3-4 imagenes*/
+        }
+
+        .banner .banner_left {
+            background-color: bisque;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #262626
+        }
+        
+        section {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 400px;
+            width: 1200px;
+            background-color: #000;
+            box-shadow: 0 25x 30px rgba(0,0,0,.5) ;
+            display: flex;
+        }
+
+        .content {
+            width: calc(50% - 50px);
+            height: 100%;
+            background: #000;
+            box-sizing: border-box;
+            padding: 30px 50px;
+            font-family: sans-serif;
+            color: #fff;
+        }
+
+        .imageBox {
+            width: calc(50% + 50px);/*border-left / 2*/
+            height: 100%;
+            background: red;
+            box-sizing: border-box; 
+            border-left: 100px solid #000;
+            border-bottom: 400px solid transparent;
+            
+            border-right: 0 solid transparent;
+            border-top: 0 solid transparent;
+            /* background: url(../img/lio.jpg); */
+            /* background-position: -100px -150px; */
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="content">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur laborum nobis pariatur inventore quo. Natus quam, iste nulla error omnis sapiente eos in dolorem repudiandae maxime incidunt commodi cupiditate accusamus!</p>
+        </div>
+        <div class="imageBox">
+        </div>
+    </section>
+</body>
+</html>
