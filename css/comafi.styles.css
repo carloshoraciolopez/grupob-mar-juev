@@ -99,3 +99,31 @@ a {
     font-weight: 100;
     margin: 0 10px;
 }
+
+.sofiacontainer {
+    position: relative;
+}
+.sofiacontainer {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 70px;
+    position: fixed;
+    right: 10px;
+    top:50%;
+    align-items: flex-end;
+    z-index: 99;
+}
+
+.sofiacontainer > div.sofia3dhelp {
+    height: 30px;
+    background-color: #789c48;
+    padding: 10px;
+    /* border-radius: 50% 10% 50% 10%;  */
+    color:white;
+    visibility: hidden;
+}
+
+.sofiacontainer:hover > div.sofia3dhelp {
+    visibility: visible;
+}
