@@ -1,0 +1,78 @@
+/*import font google*/
+
+/*familia de fuentes*/
+:root {
+
+    /*texto*/
+    --font-family-text-size: 16px;
+    --font-family-primary: 'Ubuntu';
+    --font-family-primary-regular: 400;
+    --font-family-primary-medium: 500;
+    --font-family-primary-bold: 800;
+    --font-family-primary-color:  #606060;/*tipo material*/
+    --font-family-primary-color-light:  #a8a8a8;/*tipo material*/
+    --font-family-primary-color-dark:  #434343;
+    --white: #fcfcfc;
+    --dark: #1d1d1d;
+    --backgound-color-light: #fcfcfc;
+    --backgound-color-dark: #fcfcfc;
+
+    /*color principal*/
+    --comafi-primary-color:  #789347;
+    --comafi-primary-color-light:  #bdcf9d;
+    --comafi-primary-color-dark:  #546732;
+    
+    /*color secundario*/
+    --comafi-secondary-color:  #0071ce;
+    --comafi-secondary-color-light:  #80c6ff;
+    --comafi-secondary-color-dark:  #003057;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    /*position: relative;*/
+}
+
+body {
+    color: var(--font-family-primary-color);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-family-primary-regular);
+    font-size: var(--font-family-text-size);
+    line-height: 1.4;
+    background-color: var(--main-backgound-color);
+}
+
+/*encabezados (a definir) */
+h1 {
+    font-size: 1.2rem;
+}
+
+h2 {
+
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+h6 {
+ 
+}
+
+/*clases para los titulo*/
+button {
+    border: none;
+    background-color: var(--comafi-primary-color);
+    /* border-radius: 10%; */
+    padding: 0.25em;
+    line-height: 1;
+    color:var(--white);
+    font-weight: var(--font-family-primary-medium);
+}
+
+

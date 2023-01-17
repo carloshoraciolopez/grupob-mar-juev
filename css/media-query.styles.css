@@ -1,0 +1,61 @@
+
+/*variable css*/
+:root {
+    --comafi-primary-color: blue;
+    --comafi-primary-font: 'Ubuntu';
+    /*font-size: 16px;*/
+    font-size: 10px;
+    --comafi-backgrond-color: #9c9393;
+}
+
+/**/
+body {
+    font-family: var(--comafi-primary-font);
+    /*medidas px | rem*/
+    font-size: 2rem; /*1 rem = 16px*/
+}
+
+h1 {
+    color: var(--comafi-primary-color);
+}
+    
+section {
+    font-size: 20px;
+}
+
+section p {
+    font-size: 2em;
+}
+
+/*medias query*/
+@media print {
+    :root {
+        --comafi-primary-color: green;
+        font-size: 5px;
+    }
+    section {
+        font-size: 10px;
+    }
+}
+
+header ul {
+    display: flex;
+}
+
+/*media query para browser*/
+@media screen and (max-width:576px){
+    header ul { 
+        display: flex;        
+        flex-direction: column;
+    }
+}
+/*rango*/
+@media screen and (min-width:576px) and (max-width:768px) {
+    header ul { 
+        display: flex;        
+        flex-direction: row;
+    }
+    section p{
+        color: rgb(106, 255, 0);
+    }
+}
