@@ -1,0 +1,40 @@
+.producto-item {
+    background: url('../img/unico.png');
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 1rem; */
+}
+
+.producto-item p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.producto-item button  {
+    background-color: gray;
+    border: none;
+    color: white;
+    height: 3rem;
+}
+
+.miicono {
+    font-size: 50px;
+    /* color: brown; */
+}
+
+.misection {
+    background-color: rgb(191, 177, 177);
+    height: 150px ;
+    align-items: center;
+}
+
+.misection button{
+    background-color: green;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border:none
+}
