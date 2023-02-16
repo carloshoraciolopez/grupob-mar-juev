@@ -1,0 +1,96 @@
+/*selector universal*/
+* {
+   margin: 0px;     
+   padding: 0px;
+   font-size: 16px;
+}
+
+/*selector por tipo*/
+h1 {
+    color:green;
+}
+
+/*selector por id*/
+/*solo se puede aplicar a un elemento = tag */
+#miTexto {
+    color:blueviolet;
+    font-size: 20px;
+    text-transform: capitalize; /*lowercase | uppercase |  */;
+}
+
+p {
+    /*display: inline;*/
+    text-decoration: underline;
+    /*cursor: pointer;*/
+}
+
+/*selector por clase*/
+/*
+se puede aplicar a muchos elemento
+*/
+.miSection {
+    background-color: aquamarine;
+}
+
+body {
+    /* background-color: brown; */
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+/*tomar el h1 dentro de la clase .texto-centrado*/
+.texto-centrado h2 {
+    text-align: left;
+}
+
+.links {
+    width: 200px;
+    height: 200px ;
+    border: 5px solid black;
+    border-radius: 10%;
+    /* display: block; */
+    text-align: right;
+}
+
+.lista {
+    margin-left: 20px;
+}
+
+.lista ul {
+    list-style-type: square;
+}
+
+
+/*estilos para el cv*/
+.personal {
+    background-color: antiquewhite;
+    border: 1px solid red;
+    padding: 5px;
+    text-align: center;
+}
+.personal div {
+    display: inline-block;
+}
+
+.personal_left {
+    text-transform: uppercase;
+    width: 47%;
+}
+
+.personal_right {
+    width: 47%;
+}
+
+.personal img {
+    width: 200px;
+    height: auto;
+}
+.cv {
+    /* padding: 25px; */
+    margin: 0 auto;
+    width: 95%;
+    border-radius: 10px;
+    background-color: cadetblue;
+}
