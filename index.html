@@ -2,6 +2,41 @@
 <html lang="es">
     <head>
         <title>Bootcamp - Clase1 JS</title>
+        <script>
+            const array = [
+                {edad:10,nombre: 'carlos', dni: 123},
+                {edad:20,nombre: 'juan', dni: 456},
+                {edad:30,nombre: 'maria', dni: 678},
+                {edad:45,nombre: 'jorge', dni: 901}
+            ];
+            //¿suma de los elementos?
+            let suma = 0;
+            for(let i=0;i<array.length;i++) {
+                const item = array[i];
+                suma += item.edad;
+            }   
+            console.log(suma);
+
+            //forErch 
+            let sumaEach=0;           
+            array.forEach(item => sumaEach+=item.edad); //lambda > que quiero
+            console.log(sumaEach);
+
+            //sumar usando .reduce()
+            const sumsReduce = array.reduce((total,item) => total + item.edad , 0);
+            console.log(sumsReduce);
+
+            /*const data = array.join(',');
+            onsole.log(data);*/
+            let nombres = array.reduce( (concatendador,item) =>  concatendador + ','+ item.nombre  ,'')
+            nombres = nombres.substring(1,nombres.length);
+
+            console.log(nombres);
+
+            /*map para obtener solo el dni*/
+            const mapDelArray = array.map(item => { return {id:item.dni, name: item.nombre} });
+            console.log(mapDelArray);//[123,456,789,901]
+        </script>
     </head>
     <body>        
         <!-- 1 - incluir un archivo externo de javascript-->        
