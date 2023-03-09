@@ -42,10 +42,6 @@ function obtenerDeLocalStorage(key) {
 function mostrar() {
     const div = document.getElementById('alumnos');
     
-<<<<<<< Updated upstream
-    div.innerHTML = JSON.stringify(personas);
-}
-=======
     div.innerHTML = '';
 
     //for of
@@ -151,10 +147,10 @@ function cargarParaEditar(id){
 function actualizar() {
     const id = document.getElementById('idAActualizar').value;
     //const persona = personas.find(p=> p.id === id);
-    const idxPersona = personas.findIndex(p=> p.id === id);
+    const idxPersona = personas.findIndex(p=> p.id === +id);
 
     //validaciones
-    if(!idxPersona) {
+    if(!!idxPersona) {
         return;
     }
 
@@ -170,4 +166,3 @@ function actualizar() {
 
 //cuando carga la pagina invoco a TablaPersonas(personas);
 TablaPersonas(personas);
->>>>>>> Stashed changes
