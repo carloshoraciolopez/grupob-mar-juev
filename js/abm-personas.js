@@ -149,8 +149,7 @@ function actualizar() {
     //const persona = personas.find(p=> p.id === id);
     const idxPersona = personas.findIndex(p=> p.id === +id);
 
-    //validaciones
-    if(!!idxPersona) {
+    if(idxPersona < 0) {
         return;
     }
 
@@ -162,7 +161,45 @@ function actualizar() {
     //actualizo el array
     personas[idxPersona] = persona;
     guardarEnLocalStorage('personas',personas);
+
+    //actualizar los datos de la tabla por medio del tr > td
+    actualizarTdPersona(persona);
+}
+
+function actualizarTdPersona(persona) {
+    const tr = document.getElementById(persona.id);
+    //dom > children
+    tr.children[0].innerHTML = persona.nombre;
+    tr.children[1].innerHTML = persona.apellido;
+
+    limpiarCamposActualizar();
+}
+
+function limpiarCamposActualizar() {
+    //limpio los campos
+    document.getElementById('personaNombre').value = '';
+    document.getElementById('personaApellido').value = '';
+    document.getElementById('idAActualizar').value = '';
 }
 
 //cuando carga la pagina invoco a TablaPersonas(personas);
 TablaPersonas(personas);
+
+
+function callbackLogin(obj) {
+    console.log(obj);
+    //jwt
+
+    //decodificar el jwt....
+}
+
+//callback
+function login(u,p,callback) {
+
+    //invocar el servicio de google para autenticacion
+    const obj = {id: 32123231231};
+
+    callback(obj);
+}
+
+login('username','password',callbackLogin);
