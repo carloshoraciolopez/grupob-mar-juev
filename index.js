@@ -13,8 +13,8 @@ function inyectar(key, data) {
     document.getElementById(key).innerHTML = data;
 }
 
-async function callbackClick  () {
-    const listado = await findUsers(1);
+async function buscarUsuarios (page) {
+    const listado = await findUsers(page);
 
     const html = ListadoUsuario(listado.data);
     
@@ -25,6 +25,7 @@ async function callbackClick  () {
 //asociar al boton el evento click
 document
     .getElementById('btnFindUsers')
-    .addEventListener('click',callbackClick);
+    .addEventListener('click',buscarUsuarios);
 
 render();
+
